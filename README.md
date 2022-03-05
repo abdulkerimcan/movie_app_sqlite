@@ -4,17 +4,17 @@ An app to watch movies!
 
 ## About The Project
 
-In this project, the movies are shown in a list. When clicking a movie ,a detailed page of the movie is shown.. 
+In this project, the movies are shown in a list. When clicking a movie ,a detailed page of the movie is shown. 
 <br> <br>
 ![image](https://user-images.githubusercontent.com/79968953/156896227-7a9f3799-2650-489b-ac5f-e351658eb1fd.png) <br>
  <br> <br>
 I use GridView.builder with FutureBuilder. <br>
 ```dart
-FutureBuilder<List<Food>>(
-        future: getFood(),
+FutureBuilder<List<Movie>>(
+        future: getMovie(),
         builder: (context, snapshot) {
         if (snapshot.hasData) {
-            var foodList = snapshot.data;
+            var movieList = snapshot.data;
             return GridView.builder(
                 .
                 .
@@ -43,7 +43,7 @@ class Movie {
 in order to retrieve the data asynchronously, I have created a Future method as follows.
 ```dart
 
-Future<List<Food>> getMovie() async {
+Future<List<Movie>> getMovie() async {
     var movieList = <Food>[];
     .
     .
