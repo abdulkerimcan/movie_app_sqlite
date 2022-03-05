@@ -1,16 +1,60 @@
-# movie_app
+# Movie App 
 
-A new Flutter project.
+An app to watch movies!
 
-## Getting Started
+## About The Project
 
-This project is a starting point for a Flutter application.
+In this project, the movies are shown in a list. When clicking a movie ,a detailed page of the movie is shown.. 
+<br> <br>
+![image](https://user-images.githubusercontent.com/79968953/156896227-7a9f3799-2650-489b-ac5f-e351658eb1fd.png) <br>
+ <br> <br>
+I use GridView.builder with FutureBuilder. <br>
+```dart
+FutureBuilder<List<Food>>(
+        future: getFood(),
+        builder: (context, snapshot) {
+        if (snapshot.hasData) {
+            var foodList = snapshot.data;
+            return GridView.builder(
+                .
+                .
+                .
+                .
+                .
+                .
+        }
+```
 
-A few resources to get you started if this is your first Flutter project:
+If the data we have taken is empty, it will show a blank screen.<br>
+![image](https://user-images.githubusercontent.com/79968953/156896234-a799923d-bb44-455b-ae58-28b5831cf342.png) <br>
+ <br> <br>
+I created a class called Movie and kept the features(img url,name,imdb) of the movie in it. <br>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```dart
+class Movie {
+  String img,name;
+  double imdb;
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  Movie( this.name, this.img, this.imdb);
+}
+```
+
+
+in order to retrieve the data asynchronously, I have created a Future method as follows.
+```dart
+
+Future<List<Food>> getMovie() async {
+    var movieList = <Food>[];
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    return movieList;
+  }
+```
+
+
+
