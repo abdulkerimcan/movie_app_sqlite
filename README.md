@@ -44,7 +44,7 @@ in order to retrieve the data asynchronously, I have created a Future method as 
 ```dart
 
 Future<List<Movie>> getMovie() async {
-    var movieList = <Food>[];
+    var movieList = <Movie>[];
     .
     .
     .
