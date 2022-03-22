@@ -4,9 +4,9 @@ An app to watch movies!
 
 ## About The Project
 
-In this project, the movies are shown in a list. When clicking a movie ,a detailed page of the movie is shown. 
+In this project, the movies are shown in a list. When clicking a movie ,a detailed page of the movie is shown. And I pulled the directors and categories of the movies in this project from the database thanks to sqlite.
 <br> <br>
-![image](https://user-images.githubusercontent.com/79968953/156896227-7a9f3799-2650-489b-ac5f-e351658eb1fd.png) <br>
+![image](https://user-images.githubusercontent.com/79968953/159549558-e09aca9a-73e3-456c-afbd-87a28512f16b.png) <br>
  <br> <br>
 I use GridView.builder with FutureBuilder. <br>
 ```dart
@@ -26,7 +26,7 @@ FutureBuilder<List<Movie>>(
 ```
 
 If the data we have taken is empty, it will show a blank screen.<br>
-![image](https://user-images.githubusercontent.com/79968953/156896234-a799923d-bb44-455b-ae58-28b5831cf342.png) <br>
+![image](https://user-images.githubusercontent.com/79968953/159549389-e65a333f-c4ea-4a27-973f-e7907b8a55e6.png)
  <br> <br>
 I created a class called Movie and kept the features(img url,name,imdb) of the movie in it. <br>
 
@@ -57,4 +57,4 @@ Future<List<Movie>> getMovie() async {
 ```
 
 
-
+![image](https://user-images.githubusercontent.com/79968953/159549621-701381eb-bd19-4f60-89b8-cc97f2e68e40.png)
